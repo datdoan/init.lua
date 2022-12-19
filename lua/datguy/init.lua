@@ -1,2 +1,2 @@
 require("datguy.remap")
-print("HelloDatuy");
+require("datguy.set")
