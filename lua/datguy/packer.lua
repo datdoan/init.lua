@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
   }
 
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
+	  'p00f/alabaster.nvim',
+	  as = 'alabaster',
 	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+		  vim.cmd('colorscheme alabaster')
 	  end
   })
 
@@ -49,8 +49,9 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use("folke/zen-mode.nvim")
-  use("github/copilot.vim")
+  use('folke/zen-mode.nvim')
+  use('github/copilot.vim')
+  use('lewis6991/gitsigns.nvim')
 
-  end) 
+end)
 
