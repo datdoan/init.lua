@@ -82,7 +82,12 @@ return require('packer').startup(function(use)
   use('windwp/nvim-autopairs')
 
   -- LSP Hover doc, definition preview, and rename actions
-  use('glepnir/lspsaga.nvim')
-
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    config = function()
+      require('lspsaga').setup({})
+    end,
+  })
 
 end)
